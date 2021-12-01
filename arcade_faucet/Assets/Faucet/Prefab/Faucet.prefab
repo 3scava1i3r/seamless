@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1321676535426299013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1321676535426299015}
+  - component: {fileID: 1321676535426299009}
+  - component: {fileID: 1973722155050643756}
+  - component: {fileID: 460978006692210441}
+  - component: {fileID: 4177480295765256176}
+  m_Layer: 0
+  m_Name: Faucet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1321676535426299015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321676535426299013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1321676535426299009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321676535426299013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885f6774c97f541328f3289eff6942cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  networkUrl: 
+  networkExplorerUrl: 
+  contractAddress: 
+  gasWalletAddress: 
+  gasWalletAddressPrivate: 
+  grantTransactionHash: 
+  inputWalletAddress: {fileID: 0}
+  grantRequestCurrentScore: 0
+  grantRequestTotalScore: 0
+  OnGetElapsedRate:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGetElapsedTime:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRequestGrant:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1973722155050643756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321676535426299013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c95c115b492b48788e0f406fdb9ecde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offChainValidation: {fileID: 4177480295765256176}
+  onChainValidation: {fileID: 460978006692210441}
+  ValidStart:
+    m_PersistentCalls:
+      m_Calls: []
+  InvalidStart:
+    m_PersistentCalls:
+      m_Calls: []
+  walletAddressInputField: {fileID: 0}
+  isValidatingCoroutine: 0
+--- !u!114 &460978006692210441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321676535426299013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac118af9a6cf424ebc8717f6dd50800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crossChainContractEndpoints:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues: []
+    _keys: []
+    _values: []
+  faucet: {fileID: 1321676535426299009}
+--- !u!114 &4177480295765256176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321676535426299013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f5fc7ba6f4f4e5d9e2ea16c8815205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walletInputField: {fileID: 0}
