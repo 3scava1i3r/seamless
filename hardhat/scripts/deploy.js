@@ -14,8 +14,8 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const ContractualNFT = await hre.ethers.getContractFactory("ContractualNFT");
-  const nft = await ContractualNFT.deploy();
+  const ContractNFT = await hre.ethers.getContractFactory("ContractNFT");
+  const nft = await ContractNFT.deploy();
 
   await nft.deployed();
 
