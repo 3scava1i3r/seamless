@@ -26,7 +26,7 @@ contract ContractNFT is ERC721 {
   event CreateNewAgreement(uint agreementId, address[] addresses, string ipfsHash);
   event CompleteAndMint(uint agreementId, address to, uint tokenId);
 
-  constructor() ERC721("ContractualNFT", "CONT") {
+  constructor() ERC721("ContractNFT", "CNT") {
     counter = 1;
   }
 
