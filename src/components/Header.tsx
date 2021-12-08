@@ -42,7 +42,7 @@ function Header() {
     <Wrapper>
       <Title to="/agreement">
         <SVG icon="agreement" />
-        Contractual NFT
+        Seamless NFT
       </Title>
       <Account>
         <SVG icon="wallet" />
